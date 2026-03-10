@@ -1,0 +1,291 @@
+:root{
+  --color-black:#000000;
+  --color-white:#FFFFFF;
+  --color-purple:#B100C8;
+  --color-grey:#333333;
+}
+
+body {
+  font-family: system-ui;
+  background: var(--color-black);
+  color: var(--color-white);
+  text-align: center;
+}
+
+.menu{
+  display: flex;
+  align-items: center;
+  padding: 3rem;
+  background: var(--color-grey);
+  
+}
+
+.imgLogo{
+  width: 20%;
+}
+
+.imgS{
+  margin-right: 22.5rem;
+  width: 100%;
+  max-width: 150px;
+  border:none;
+  border-radius: 3rem;
+}
+
+.opciones-menu{
+  display: flex;
+  width: 80%;
+  font-family: Lato;
+  font-size: 1.5rem;
+  gap: 13.5rem;
+  
+  
+  & a:hover{
+    background: var(--color-white);
+    color: var(--color-black);
+  }
+}
+
+a{
+  text-decoration: none;
+  padding: 0.7rem;
+  gap: 4.5rem;
+  border:none;
+  border-radius: 31rem;
+  color: var(--color-white);
+}
+
+.boton-menu{
+  display: none; /* con esto se oculta el boton de menu en computador */
+}
+
+.inicio{
+   display: flex;
+}
+
+h1{
+  font-size: 4rem;
+}
+
+h2{
+  font-family:EB Garamond;
+}
+
+p{
+   font-family: Lato;
+}
+
+.texto-botones-inicio {
+  padding: 3.5rem;
+  text-align: left;
+}
+
+.profesion{
+  font-family: Lato;
+  font-size: 1.3rem;
+  padding-bottom: 0rem;
+}
+
+.nombre{
+  margin-top:0rem;
+  color: var(--color-purple);
+  font-family:EB Garamond;
+}
+
+.perfil{
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-align: left;
+}
+
+.botones-inicio {
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
+  }
+
+  .boton-principal{
+    padding: 1rem;
+    font-size: 1.2rem;
+    border:none;
+    font-weight: bold;
+    font-family: Lato;
+    
+    &:hover{
+      background: var(--color-purple);
+      color: #FFFFFF;
+      }
+    }
+
+.boton-secundario{
+    padding: 1rem;
+    font-size: 1.2rem;
+    color: var(--color-white);
+    background-color: var(--color-black);
+    border-color: var(--color-white);
+    font-weight: bold;
+    font-family: Lato;
+    
+    &:hover{
+      background: var(--color-grey);
+      color: #FFFFFF;
+      }
+    }
+
+.foto{
+  width: 130%;
+  height: auto;
+  justify-content: center;
+}
+
+.foto-perfil{
+  width: 150%;
+  max-width: 500px;
+  height: auto;
+}
+
+.experiencias {
+  background-color: var(--color-white);
+  color: var(--color-black);
+  padding: 1.2rem;
+  }
+
+ .texto-experiencias{
+    font-size: 1.1rem;
+  }
+
+.portafolio{
+  background-color: var(--color-grey);
+  padding: 3.5rem;
+}
+
+.proyecto-blender{
+  text-align: left;
+  font-size: 1.2rem;
+  padding-bottom: 3.7rem;
+}
+
+.recorrido-proyecto{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  font-size: 1.2rem;
+  gap: 50px;
+}
+
+.img-blender{
+  width: 100%;
+  height: auto;
+  justify-content: center;
+}
+
+.Blender{
+  width: 100%;
+  max-width: 330px;
+  height: auto;
+  border:none;
+  border-radius: 3rem;
+}
+
+.botones-proyecto {
+  display: flex;
+  justify-content: flex-start;
+  
+  button{
+    padding: 1rem;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    background-color: var(--color-grey);
+    color: var(--color-white);
+    border-color: var(--color-white);
+    font-weight: bold;
+    font-family: Lato;
+    
+    &:hover{
+      background-color: var(--color-white);
+      color: var(--color-black);
+      }
+    }
+}
+
+.mis-servicios{
+  background-color: var(--color-black);
+  color: var(--color-white);
+  padding: 1.2rem;
+}
+
+.especializaciones{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding-top: 50px;
+  padding-bottom: 100px;
+  font-size: 20px;
+}
+
+.testimonio{
+  text-align:left;
+  padding: 3.5rem;
+  padding-bottom: 5rem;
+  background-color: var(--color-white);
+  color: var(--color-black);
+  font-size: 1.2rem;
+}
+
+.contactos{
+  background-color: var(--color-grey);
+  padding: 2rem;
+}
+
+.numero-correo{
+  display: flex;
+  justify-content: center;
+  font-size: 1.2rem;
+  gap: 4.3rem;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  
+  .imgLogo{
+    width: 100%;
+      }
+
+  .imgS{
+    margin-right: 8rem;
+    width: 100%;
+    max-width: 150px;
+    border:none;
+    border-radius: 3rem;
+      }
+
+  .opciones-menu {
+    display: none; /* Esta parte oculta los href en movil */
+    }
+
+  .boton-menu {
+    display: block; /* Esto muestra el boton en movil */
+    padding: 1rem;
+    font-size: 1.2rem;
+    border:none;
+    font-weight: bold;
+    font-family: Lato;
+    }
+  
+  .inicio{
+    flex-direction: column;
+    text-align: center;
+      }
+  
+  .foto{
+    width: 100%;
+    height: auto;
+    order:2;
+      }
+  
+  .foto-perfil{
+    width: 100%;
+    max-width: 350px;
+      }
+  
+    .recorrido-proyecto{
+      flex-direction: column;
+       }
+}
