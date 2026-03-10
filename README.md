@@ -1,2 +1,2 @@
-# Portafolio Página
+# Portafolio Pagina
 Una página desarrollada para mostrar mis campos profesionales y proyectos que he desarrollado en el tiempo
