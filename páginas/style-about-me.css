@@ -1,0 +1,252 @@
+:root{
+  --color-black:#000000;
+  --color-white:#FFFFFF;
+  --color-purple:#B100C8;
+  --color-grey:#333333;
+}
+
+body {
+  font-family: system-ui;
+  background: var(--color-black);
+  color: var(--color-white);
+  text-align: center;
+}
+
+.menu{
+  display: flex;
+  align-items: center;
+  padding: 3rem;
+  background: var(--color-grey);
+  
+}
+
+.imgLogo{
+  width: 20%;
+}
+
+.imgS{
+  margin-right: 22.5rem;
+  width: 100%;
+  max-width: 150px;
+  border:none;
+  border-radius: 3rem;
+}
+
+.opciones-menu{
+  display: flex;
+  width: 80%;
+  font-family: Lato;
+  font-size: 1.5rem;
+  gap: 13.5rem;
+  
+  
+  & a:hover{
+    background: var(--color-white);
+    color: var(--color-black);
+  }
+}
+
+a{
+  text-decoration: none;
+  padding: 0.7rem;
+  gap: 4.5rem;
+  border:none;
+  border-radius: 31rem;
+  color: var(--color-white);
+}
+
+.boton-menu{
+  display: none;
+}
+
+.inicio{
+   display: flex;
+   padding: 1.3rem;
+   text-align: left;
+}
+
+p{
+  font-family: Lato;
+  font-size: 1.2rem;
+}
+
+h2{
+  font-family: EB Garamond;
+  font-size: 2rem;
+  padding: 1.2rem;
+}
+
+.profesion{
+  font-family: Lato;
+  font-size: 1.3rem;
+  padding-bottom: 0rem;
+}
+
+.sobre-mi{
+  font-family: Lato;
+  font-size: 1.3rem;
+  padding-bottom: 0rem;
+}
+
+.titulo{
+  margin-top:2rem;
+  color: var(--color-purple);
+  font-family:EB Garamond;
+  family-font: 1rem;
+  font-size:  3rem;
+  font-weight: bold;
+}
+
+.texto-botones-inicio {
+  padding: 1.3rem;
+  text-align: left;
+}
+
+.botones-principal {
+  display: flex;
+  justify-content: flex-start;
+  }
+
+  .boton-principal{
+    padding: 1rem;
+    font-size: 1.2rem;
+    border:none;
+    font-weight: bold;
+    font-family: Lato;
+    
+    &:hover{
+      background: var(--color-purple);
+      color: #FFFFFF;
+      }
+    }
+
+.boton-secundario{
+    padding: 1rem;
+    font-size: 1.2rem;
+    margin: 0.7rem;
+    color: var(--color-white);
+    background-color: var(--color-black);
+    border-color: var(--color-white);
+    font-weight: bold;
+    font-family: Lato;
+    
+    &:hover{
+      background: var(--color-grey);
+      color: #FFFFFF;
+      }
+    }
+
+.flujo-trabajo{
+  background-color: var(--color-grey);
+  color: var(--color-white);
+  padding: 1.2rem;
+}
+
+.flujo {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 6rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+}
+
+.forma-de-trabajar,
+.habilidades {
+  flex: 1;
+  text-align: left;
+}
+  }
+
+.texto-flujo{
+  font-size: 1.2rem;
+}
+
+.habilidades span {
+  padding: 0.5rem 1rem;
+  border: 1px solid black;
+  border-radius: 1.1rem;
+  margin: 0.3rem;
+  display: inline-block;
+}
+
+.progamas-que-uso{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 2rem;
+}
+
+.contactos{
+  background-color: var(--color-grey);
+  padding: 2rem;
+}
+
+.numero-correo{
+  display: flex;
+  justify-content: center;
+  font-size: 1.2rem;
+  gap: 4.3rem;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  
+  .imgLogo{
+    width: 100%;
+      }
+
+  .imgS{
+    margin-right: 8rem;
+    width: 100%;
+    max-width: 150px;
+    border:none;
+    border-radius: 3rem;
+      }
+
+  .opciones-menu {
+    display: none; /* Esta parte oculta los href en movil */
+    }
+
+  .boton-menu {
+    display: block; /* Esto muestra el boton en movil */
+    padding: 1rem;
+    font-size: 1.2rem;
+    border:none;
+    font-weight: bold;
+    font-family: Lato;
+    }
+  
+  .inicio{
+    flex-direction: column;
+    text-align: center;
+      }
+ 
+  .texto-botones-inicio{
+    orden: 1;
+  }
+  
+  .foto{
+    width: 100%;
+    height: auto;
+    order:2;
+      }
+  
+  .foto-perfil{
+    width: 100%;
+    max-width: 350px;
+      }
+  
+  .flujo {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .forma-de-trabajar {
+    order: 1;
+  }
+
+  .habilidades {
+    order: 2;
+  }
+}
