@@ -1,0 +1,370 @@
+:root{
+  --color-black:#000000;
+  --color-white:#FFFFFF;
+  --color-purple:#B100C8;
+  --color-grey:#333333;
+}
+
+body {
+  font-family: system-ui;
+  background: var(--color-black);
+  color: var(--color-white);
+  text-align: center;
+}
+
+.menu{
+  display: flex;
+  align-items: center;
+  padding: 3rem;
+  background: var(--color-grey);
+  
+}
+
+.imgLogo{
+  width: 20%;
+}
+
+.imgS{
+  margin-right: 22.5rem;
+  width: 100%;
+  max-width: 150px;
+  border:none;
+  border-radius: 3rem;
+}
+
+.opciones-menu{
+  display: flex;
+  width: 80%;
+  font-family: Lato;
+  font-size: 1.5rem;
+  gap: 13.5rem;
+  
+  
+  & a:hover{
+    background: var(--color-white);
+    color: var(--color-black);
+  }
+}
+
+a{
+  text-decoration: none;
+  padding: 0.7rem;
+  gap: 4.5rem;
+  border:none;
+  border-radius: 31rem;
+  color: var(--color-white);
+}
+
+.boton-menu{
+  display: none; /* con esto se oculta el boton de menu en computador */
+}
+
+.inicio{
+   display: flex;
+}
+
+h1{
+  font-size: 3rem;
+}
+
+h2{
+  font-family:EB Garamond;
+}
+
+p{
+  font-family: Lato;
+  font-size: 1.2rem;
+}
+
+.texto-botones-inicio {
+  padding: 3.5rem;
+  text-align: left;
+}
+
+.profesion{
+  font-family: Lato;
+  font-size: 1.3rem;
+  padding-bottom: 0rem;
+}
+
+.titulo{
+  margin-top:0rem;
+  color: var(--color-purple);
+  font-family:EB Garamond;
+}
+
+.introduccion{
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-align: left;
+}
+
+.botones-inicio {
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
+  }
+
+  .boton-principal{
+    padding: 1rem;
+    font-size: 1.2rem;
+    border:none;
+    font-weight: bold;
+    font-family: Lato;
+    
+    &:hover{
+      background: var(--color-purple);
+      color: #FFFFFF;
+      }
+    }
+
+.boton-secundario{
+    padding: 1rem;
+    font-size: 1.2rem;
+    color: var(--color-white);
+    background-color: var(--color-black);
+    border-color: var(--color-white);
+    font-weight: bold;
+    font-family: Lato;
+    
+    &:hover{
+      background: var(--color-grey);
+      color: #FFFFFF;
+      }
+    }
+
+.pj{
+  width: 130%;
+  height: auto;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.foto-pj{
+  width: 150%;
+  max-width: 500px;
+  height: auto;
+  border:none;
+  border-radius: 3rem;
+}
+
+.inicio-proyecto{
+  background-color: var(--color-grey);
+  color: var(--color-white);
+  padding: 3.5rem;
+  gap: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  text-align: left;
+  gap: 2rem;
+}
+
+.concept-art{
+  width: 150%;
+  height: auto;
+  justify-content: center;
+}
+
+.concept-pjs{
+  width: 150%;
+  max-width: 400px;
+  height: auto;
+  border:none;
+  border-radius: 3rem;
+  
+}
+
+.blocking{
+  display:flex;
+  padding: 3.5rem;
+  background-color: var(--color-black);
+  color: var(--color-white);
+}
+
+.texto-blocking{
+  width: 150%;
+  height: auto;
+  justify-content: center;
+  text-align: left;
+  font-size: 1.6rem;
+}
+
+.img-blocking{
+  width: 150%;
+  height: 400px;
+  justify-content: center;
+  display: flex;
+}
+
+.blocking-pj {
+  width: 150%;
+  max-width: 400px;
+  height: 100%;
+  border:none;
+  border-radius: 3rem;
+}
+
+.texto-poses{
+  width: 150%;
+  height: auto;
+  justify-content: center;
+}
+
+.img-poses{
+  display:flex;
+  gap: 3rem;
+}
+
+.poses-pj{
+  border:none;
+  border-radius: 3rem;
+  width: 150%;
+  max-width: 250px;
+  height: 505px;
+}
+
+.esculpido{
+  width: 93%;
+  height: auto;
+  display: flex;
+  background-color: var(--color-grey);
+  color: var(--color-white);
+  padding: 3.5rem;
+  font-size: 1.6rem;
+  text-align: left;
+  gap: 2rem;
+}
+
+.esculpido-pj{
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border:none;
+  border-radius: 3rem;
+}
+
+.pelo-y-retopo{
+  padding: 3.5rem;
+}
+
+.texto-retopo{
+  text-align: left;
+}
+
+.img-retopo{
+  display: flex;
+  width: 30%;
+  higth: auto;
+  gap: 3rem;
+}
+
+.img-retopo img{
+  width: 100%;
+  max-widht: 5px;
+  hight: auto;
+  border:none;
+  border-radius: 3rem;
+}
+
+.contactos{
+  background-color: var(--color-grey);
+  padding: 2rem;
+}
+
+.numero-correo{
+  display: flex;
+  justify-content: center;
+  font-size: 1.2rem;
+  gap: 4.3rem;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  
+  .imgLogo{
+    width: 100%;
+      }
+
+  .imgS{
+    margin-right: 8rem;
+    width: 100%;
+    max-width: 150px;
+    border:none;
+    border-radius: 3rem;
+      }
+
+  .opciones-menu {
+    display: none; /* Esta parte oculta los href en movil */
+    }
+
+  .boton-menu {
+    display: block; /* Esto muestra el boton en movil */
+    padding: 1rem;
+    font-size: 1.2rem;
+    border:none;
+    font-weight: bold;
+    font-family: Lato;
+    }
+  
+  .inicio{
+    flex-direction: column;
+    text-align: center;
+      }
+  
+  .pj{
+    width: 100%;
+    height: auto;
+    order:2;
+      }
+  
+  .foto-pj{
+    width: 100%;
+    max-width: 350px;
+      }
+  
+  .inicio-proyecto{
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .plan-proyecto{
+    order: 1;
+  }
+  
+  .concept-art{
+    order: 2;
+    text-align: center;
+  }
+  
+  .proceso-proyecto{
+    order: 3;
+  }
+  
+  .blocking{
+    width: 50%;
+    height: auto;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .texto-blocking{
+    order: 0;
+  }
+  
+  .blocking-pj{
+    width: 100%;
+    height: auto;
+    order: 1;
+  }
+  
+  .img-retopo img{
+  width: 100%;
+  max-widht: 5px;
+  hight: auto;
+  border:none;
+  border-radius: 3rem;
+}
+ 
+  
+  
+  
